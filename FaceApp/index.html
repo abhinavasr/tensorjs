@@ -7,14 +7,18 @@
     <link rel="stylesheet" href="css/base.css">
   </head>
   <body>
+    
+    <!-- Add an image that we will use to test -->
+    
     <!-- Load index.js after the content of the page -->
     <script src="js/index.js"></script>
 
     <div class="login-page">
       <div class="form">
           <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
-          <button id="console" >Unrecognized User (Login with Username/Password)</button>
+          <button id="console">Unrecognized User (Login with Username/Password)</button>
           <p class="message">Not registered? <a href="register.html">Create an account</a></p>
+          <input type="password" id="hiddenAuthData" value="" style="display: none;"/>
         </div>
       </div>
     </div>
